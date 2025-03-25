@@ -9,8 +9,9 @@
 }
 
 body {
-  margin: 0;
+  margin:0 auto;
 }
+
 
 h1,
 h2,
@@ -51,3 +52,4 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
