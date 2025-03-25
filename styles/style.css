@@ -416,6 +416,7 @@ body:has(.dialog[open]) {
 
 @supports (text-stroke: 1px var var(--stroke-color, #fff)) or
   (-webkit-text-stroke: 1px var(--stroke-color, #fff)) {
+    
   .image-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--stroke-color, #fff);
