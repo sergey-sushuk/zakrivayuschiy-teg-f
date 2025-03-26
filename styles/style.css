@@ -143,12 +143,11 @@
   width: min(100%, 700px);
   justify-self: center;
   margin-block-end: 48.5px;
-  border: 2px solid var(--main-color, #000);
 }
 
 .card__title {
   background-color: var(--bg-color, #fff);
-  font-family: "Inter-Variable";
+  font-family: "Inter-Variable", "Arial", sans-serif;
   font-variation-settings: "wght" 700, "wdth" 110, "opsz" 0;
   font-size: 18px;
   padding-inline-start: 10px;
@@ -162,12 +161,11 @@
   display: flex;
   background-color: var(--bg-color, #fff);
   width: min(100%, 698px);
-  font-family: "PressStart2P";
+  font-family: 'PressStart2P', 'Courier New', fantasy;
   justify-self: center;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  border: 2px, solid, var(--bg-color, #fff);
   align-content: center;
   margin-top: 100px;
   gap: 20px;
@@ -187,7 +185,7 @@
 
 .card__parahraph {
   padding-inline-start: 25px;
-  padding-inline-end: 25.5px;
+  padding-inline-end: 27.5px;
   padding-block-start: 26px;
 }
 
@@ -226,7 +224,7 @@
   position: relative;
   z-index: 1;
   color: var(--bg-color, #fff);
-  font-family: "PressStart2P", "Courier New", fantasy;
+  font-family: 'PressStart2P', 'Courier New', fantasy;
   font-size: 0.875rem;
   line-height: 0.9;
   mix-blend-mode: difference;
@@ -286,7 +284,6 @@ body:has(.dialog[open]) {
 .dialog {
   grid-template-columns: min-content auto;
   block-size: 193px;
-  inline-size: 357px;
   align-items: center;
   gap: 20px 20px;
   padding: 30px;
@@ -294,6 +291,7 @@ body:has(.dialog[open]) {
   background-color: var(--bg-color, #fff);
   inline-size: clamp(21.25rem, 5.538vw + 19.952rem, 22.375rem);
 }
+
 .dialog[open] {
   display: grid;
 }
@@ -310,7 +308,7 @@ body:has(.dialog[open]) {
 }
 
 .modal__text {
-  font-family: "PressStart2P";
+  font-family: 'PressStart2P', 'Courier New', fantasy;
   font-size: 0.875rem;
   line-height: 1.5;
 }
@@ -327,7 +325,7 @@ body:has(.dialog[open]) {
   right: clamp(0.813rem, 3.692vw - 0.053rem, 1.563rem);
   opacity: 0.5;
   color: var(--main-color, #000);
-  font-family: "PressStart2P", cursive;
+  font-family: 'PressStart2P', 'Courier New', fantasy;
   font-size: 0.875rem;
   line-height: 1.2;
   text-transform: uppercase;
@@ -383,7 +381,7 @@ body:has(.dialog[open]) {
   }
 
   .card__title {
-    letter-spacing: 0.1px;
+    letter-spacing: 0.2px;
   }
   .card {
     margin-bottom: 49px;
@@ -401,7 +399,7 @@ body:has(.dialog[open]) {
   .card__parahraph {
     letter-spacing: 0.1px;
     padding-top: 27px;
-    padding-inline-end: 23px;
+    padding-inline-end: 25px;
     line-height: 20.8px;
   }
   
@@ -416,7 +414,7 @@ body:has(.dialog[open]) {
 
 @supports (text-stroke: 1px var var(--stroke-color, #fff)) or
   (-webkit-text-stroke: 1px var(--stroke-color, #fff)) {
-    
+
   .image-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--stroke-color, #fff);
